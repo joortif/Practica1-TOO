@@ -12,6 +12,8 @@ namespace Ejercicio4
 {
     public partial class FormEjer4 : Form
     {
+
+        private bool creado = false;
         public FormEjer4()
         {
             InitializeComponent();
@@ -19,7 +21,17 @@ namespace Ejercicio4
 
         private void btCrearBt_Click(object sender, EventArgs e)
         {
-            btNuevo.Visible = true;
+            if (!creado)
+            {
+                Button btNuevo = new Button();
+                Controls.Add(btNuevo);
+                btNuevo.Size = new Size(98, 51);
+                btNuevo.Location = new Point(400, 69);
+                btNuevo.Text = "Nuevo";
+                btNuevo.Click += btNuevo_Click;
+                creado = true;
+            }
+            
 
         }
 

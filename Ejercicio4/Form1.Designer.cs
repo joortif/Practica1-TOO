@@ -30,7 +30,6 @@
         {
             this.btCrearBt = new System.Windows.Forms.Button();
             this.btSalir = new System.Windows.Forms.Button();
-            this.btNuevo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btCrearBt
@@ -53,23 +52,11 @@
             this.btSalir.UseVisualStyleBackColor = true;
             this.btSalir.Click += new System.EventHandler(this.btSalir_Click);
             // 
-            // btNuevo
-            // 
-            this.btNuevo.Location = new System.Drawing.Point(561, 98);
-            this.btNuevo.Name = "btNuevo";
-            this.btNuevo.Size = new System.Drawing.Size(98, 51);
-            this.btNuevo.TabIndex = 2;
-            this.btNuevo.Text = "Nuevo";
-            this.btNuevo.UseVisualStyleBackColor = true;
-            this.btNuevo.Visible = false;
-            this.btNuevo.Click += new System.EventHandler(this.btNuevo_Click);
-            // 
             // FormEjer4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btNuevo);
             this.Controls.Add(this.btSalir);
             this.Controls.Add(this.btCrearBt);
             this.Name = "FormEjer4";
@@ -82,7 +69,6 @@
 
         private System.Windows.Forms.Button btCrearBt;
         private System.Windows.Forms.Button btSalir;
-        private System.Windows.Forms.Button btNuevo;
     }
 }
 
