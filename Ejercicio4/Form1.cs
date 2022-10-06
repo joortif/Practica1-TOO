@@ -21,8 +21,6 @@ namespace Ejercicio4
 
         private void btCrearBt_Click(object sender, EventArgs e)
         {
-            if (!creado)
-            {
                 Button btNuevo = new Button();
                 Controls.Add(btNuevo);
                 btNuevo.Size = new Size(98, 51);
@@ -30,7 +28,8 @@ namespace Ejercicio4
                 btNuevo.Text = "Nuevo";
                 btNuevo.Click += btNuevo_Click;
                 creado = true;
-            }
+                btCrearBt.Enabled = false;
+           
             
 
         }
